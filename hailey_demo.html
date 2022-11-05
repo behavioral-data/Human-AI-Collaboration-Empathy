@@ -22,7 +22,7 @@
 	<script>
 		$(document).ready(function(){
 			document.body.requestFullscreen();
-			var server_list = []; // TODO: Add the list of API servers here
+			var server_list = ['http://localhost:1000/api/rewriting/']; 
 
 			var curr_server = 0;
 
@@ -448,24 +448,14 @@
 		
 								<div class="col-sm-12 rounded" id="feedback_trigger">
 
-										<!-- <span id='close' onclick='this.parentNode.parentNode.removeChild(this.parentNode); return false;'><i class="fa fa-times" aria-hidden="true"></i>
-										</span> -->
-
 									<p id="trigger_msg" style="font-size: 21.5px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">&#128522;&nbsp; Would you like some help with your response?</p>
 		
 								</div>
 
-								<!-- <div class="col-sm-12" > -->
 
 								<p id="reload_msg" style="display: none; position:relative;"><mark style="background-color: #FFFFCC;"> Tap <i class="fa fa-refresh" aria-hidden="true"></i> at bottom-right for reloading feedback</mark></p>
 
-								<!-- </div> -->
-
 								<div class="col-sm-12 rounded" id="feedback" style="display: none; position:relative;">
-
-										<!-- <span id='flag' class="rounded-circle" ><i class="fa fa-flag" aria-hidden="true"></i></i>
-										</span> -->
-
 										
 										<span id='reload' class="rounded-circle" ><i class="fa fa-refresh" aria-hidden="true"></i>
 										</span>
@@ -478,7 +468,7 @@
 		
 								<div class="col-sm-12" id = "RP">
 		
-								<textarea  id="response_post" name="response_post" class="form-control" rows="4" placeholder="Write a supportive, empathic response here" style="font-size: 21.5px;" required></textarea>
+								<textarea  id="response_post" name="response_post" class="form-control" rows="4" placeholder="Write a supportive, empathic response here" style="font-size: 21.5px;" required>Don't worry! I'm there for you.</textarea>
 								</div>
 
 								</div>
